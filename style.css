@@ -66,6 +66,8 @@ section{
 }
 .card-box-prod{
     background-color: aliceblue;
+    width: 300px;
+    row-gap: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -74,8 +76,36 @@ section{
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.5);
 }
+.card-box-prod span{
+    align-self: flex-start;
+    font-weight: 700;
+}
+.card-box-prod p{
+   background-color: rgb(28, 50, 109);
+   border-radius: 5px;
+   padding: 10px;
+   color: rgb(255, 255, 255);
+   margin-left: -11px;
+   margin-right: -11px;
+   margin-bottom: -11px;
+   border-top-left-radius: 10px;
+   border-top-right-radius: 10px;
+   font-weight: 500;
+   text-align: left;
+   
+}
+#lanche_img{
+    width: 200px;
+    border-radius: 10px;
+    background-color: aqua;
+}
+.title-card{
+  
+
+}
 .content-menu-section{
     display: flex;
+    justify-content: center;
     gap: 15px;
     padding: 40px;
     background-color: #0c112b;
