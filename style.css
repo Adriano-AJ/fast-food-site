@@ -64,3 +64,23 @@ section{
     font-weight: 500;
     color: #8a5a49;
 }
+.card-box-prod{
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+.content-menu-section{
+    display: flex;
+    gap: 15px;
+    padding: 40px;
+    background-color: #0c112b;
+}
+#menu-section{
+    display: inline;
+    
+}
