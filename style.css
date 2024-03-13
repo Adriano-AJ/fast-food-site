@@ -65,7 +65,7 @@ section{
     color: #8a5a49;
 }
 .card-box-prod{
-    background-color: aliceblue;
+    background-color: #dedfd9;
     width: 300px;
     row-gap: 5px;
     display: flex;
@@ -74,23 +74,17 @@ section{
     flex-direction: column;
     padding: 10px;
     border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(133, 49, 49, 0.5);
 }
 .card-box-prod span{
     align-self: flex-start;
     font-weight: 700;
 }
 .card-box-prod p{
-   background-color: rgb(28, 50, 109);
+   background-color: #343a40;
    border-radius: 5px;
    padding: 10px;
    color: rgb(255, 255, 255);
-   margin-left: -11px;
-   margin-right: -11px;
-   margin-bottom: -11px;
-   border-top-left-radius: 10px;
-   border-top-right-radius: 10px;
-   font-weight: 500;
    text-align: left;
    
 }
@@ -107,10 +101,139 @@ section{
     display: flex;
     justify-content: center;
     gap: 15px;
-    padding: 40px;
-    background-color: #0c112b;
+    padding: 20px;
+    
+    max-width: 1200px;
 }
 #menu-section{
-    display: inline;
-    
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
+#title-footer{
+    padding: 10px;
+    font-size: x-large;
+    font-weight: 500;
+   color: #933e20;
+}
+.site-footer {
+    background-color: #000;
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .contact-info {
+    text-align: left;
+  }
+  .contact-info p {
+    color: #fff;
+  }
+  
+  .social-links {
+    text-align: right;
+  }
+  
+  .social-links a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  /* Adicione ícones específicos para Instagram e LinkedIn (você pode encontrar ícones online ou usar bibliotecas de ícones) */
+  .instagram-icon::before {
+    content: '\f16d'; /* Substitua este código pela representação do ícone do Instagram */
+    font-family: FontAwesome; /* Certifique-se de que a fonte do ícone esteja carregada no seu site */
+  }
+  
+  .linkedin-icon::before {
+    content: '\f08c'; /* Substitua este código pela representação do ícone do LinkedIn */
+    font-family: FontAwesome; /* Certifique-se de que a fonte do ícone esteja carregada no seu site */
+  }
+  
+  /* Adicione ao seu arquivo style.css */
+
+/* Estilos adicionais para a página de menu */
+.content-menu-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .card-box-prod {
+    margin: 15px;
+    max-width: 275px;
+    text-align: center;
+    border: none;
+    box-shadow: 3px 3px 5px 0px rgba(139, 139, 139, 0.5);
+  }
+  .card-box-prod p {
+    display: flex;
+    width: 100%;
+    color: #ffffff;
+    font-size: medium;
+    font-weight: 600;
+  }
+  .lanche_img {
+    max-width: 100%;
+    height: auto;
+  }
+  .button{
+    font-size: large;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    padding: 10px;
+    background-color: green;
+    color: aliceblue;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  /* Adicione ao seu arquivo style.css */
+
+/* Estilos adicionais para a página About */
+#about-section {
+    background-color: #f8f8f8;
+    padding: 50px 0;
+    text-align: center;
+    height: 100vh;
+  }
+  
+  .content-about-section {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .content-about-section h2 {
+    color: #333;
+  }
+  
+  .content-about-section p {
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  .content-about-section p:last-child {
+    margin-bottom: 0;
+  }
+  
+  /* Estilizando o header e a navegação */
+  
+  
+  /* Adicione mais estilos conforme necessário */
+  
+  /* Mídia para dispositivos com largura até 600 pixels (por exemplo, dispositivos móveis) */
+  @media screen and (max-width: 600px) {
+    
+  }
+  
