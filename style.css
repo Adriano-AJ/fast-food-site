@@ -236,14 +236,11 @@ section{
   @media screen and (max-width: 600px) {
     
   }
-  body{
-    display: flex;
-  }
   main{
-    width: 60vw;
+    width: 55%;
   }
   main img{
-    width: 60vw;
+    width: 55vw;
     height: 100vh;
   }
   #login_section, form{
@@ -251,13 +248,18 @@ section{
     display: flex;
     flex-direction: column;
     background-color: #1a1a1e;
-    width: 40vw;
+    width: 45%;
   }
   form{
-    background-color: #dedfd9;
-    padding: 60px;
-    gap: 20px;
+    padding-left: 80px;
+    padding-right: 80px;
+    gap: 25px;
     justify-content: center;
+    width: 100%;
+  }
+  form .logo{
+    margin-bottom: 40px;
+    width: 100%;
   }
   #btn{
     text-align: center;
@@ -265,14 +267,34 @@ section{
     border-radius: 5px;
     border: none;
     cursor: pointer;
+    background-color: #0f5183;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 18px;
   }
   .input_group{
     display: flex;
     flex-direction: column;
+    gap: 10px;
 
+  }
+  .input_group label{
+    color: #fff;
   }
   .input_group input{
     border-radius: 5px;
     border-style: solid;
     padding: 10px;
+    background-color: #242425;
+    font-size: 16px;
+    color: #FFFFFF;
+  }
+  #title_form{
+    color: #c4c4cc;
+    width: 100%;
+  }
+  #text-logo-form{
+    color: #f4f4ff;
+    font-weight: 600;
+    font-size: 20px;
   }
