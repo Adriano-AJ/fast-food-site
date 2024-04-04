@@ -236,4 +236,43 @@ section{
   @media screen and (max-width: 600px) {
     
   }
-  
+  body{
+    display: flex;
+  }
+  main{
+    width: 60vw;
+  }
+  main img{
+    width: 60vw;
+    height: 100vh;
+  }
+  #login_section, form{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #1a1a1e;
+    width: 40vw;
+  }
+  form{
+    background-color: #dedfd9;
+    padding: 60px;
+    gap: 20px;
+    justify-content: center;
+  }
+  #btn{
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+  }
+  .input_group{
+    display: flex;
+    flex-direction: column;
+
+  }
+  .input_group input{
+    border-radius: 5px;
+    border-style: solid;
+    padding: 10px;
+  }
