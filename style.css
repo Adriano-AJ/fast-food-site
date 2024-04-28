@@ -54,6 +54,8 @@ section{
     flex-direction: column;
     gap: 10px;
     padding: 40px;
+    width: 600px;
+    justify-content: center;
 }
 .text-principal h1, p {
     color: #933e20;
@@ -95,6 +97,7 @@ section{
 }
 .title-card{
   
+
 
 }
 .content-menu-section{
@@ -236,19 +239,23 @@ section{
   @media screen and (max-width: 600px) {
     
   }
-  main{
-    width: 55%;
+  #main_login{
+   display: grid; /* Dos filas, 100px y 200px de alto respectivamente */
+    grid-template-columns: 1fr 1fr; 
   }
-  main img{
-    width: 55vw;
-    height: 100vh;
+  #picture_login{
+    width: 50vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+     background-image: url('logo.jpeg'); 
+     background-color: #002039;
   }
   #login_section, form{
     height: 100vh;
     display: flex;
     flex-direction: column;
     background-color: #1a1a1e;
-    width: 45%;
   }
   form{
     padding-left: 80px;
@@ -297,4 +304,45 @@ section{
     color: #f4f4ff;
     font-weight: 600;
     font-size: 20px;
+  }
+  #section_second{
+    background-color: #933e20;
+    padding: 20px;
+  }
+  #container-box-second{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    background-color: #ddd;
+    width: 1280px;
+    gap: 40px;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  #container-box-text span{
+    font-size: 24px;
+    font-weight: 600;
+  }
+  #container-box-text{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  #container-box-text p{
+    text-align: justify;
+    padding: 10px;
+  }
+  #container-box-text ul{
+    list-style: none;
+    display: inline-flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 18px;
+  }
+  #pic img{
+    border-radius: 5px;
+    border-style: solid;
+    border-color: #ffffff;
+    border-width: 2px;
   }

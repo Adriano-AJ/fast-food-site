@@ -7,33 +7,31 @@
     <title>Login</title>
 </head>
 <body>
-    <main>
-        <img src="logo.jpeg">
+    <main id="main_login">
+        <picture id="picture_login"> 
+        </picture>
+        <section id="login_section">
+            <form action="" method="post">
+                <div class="logo">
+                    <span> <img src="logo.jpeg" width="40px" alt=""></span>
+                    <span id="text-logo-form">
+                       DUPELA SNACKS
+                    </span>
+                </div>
+                <h1 id="title_form">Acesse sua conta</h1>
+                <div class="input_group">
+                <label for="">E-mail</label>
+                <input placeholder="Seu e-mail" type="email" name="email_input" id="email_input">
+                </div>
+                <div class="input_group">
+                <label for="">Senha</label>
+                <input placeholder="Sua senha" type="password" name="pass_input" id="pass_input">
+                </div>
+                <input id="btn" type="button" value="Entrar">
+                <p><a href="register.html">Não tem uma conta? Cadastre-se</a></p>
+            </form>
+        </section>
     </main>
-    <section id="login_section">
-        
-        
-        <form action="" method="post">
-            <div class="logo">
-                <span> <img src="logo.jpeg" width="40px" alt=""></span>
-                <span id="text-logo-form">
-                   DUPELA SNACKS
-                </span>
-            </div>
-            <h1 id="title_form">Acesse sua conta</h1>
-            <div class="input_group">
-            <label for="">E-mail</label>
-            <input placeholder="Seu e-mail" type="email" name="email_input" id="email_input">
-            </div>
-
-            <div class="input_group">
-            <label for="">Senha</label>
-            <input placeholder="Sua senha" type="password" name="pass_input" id="pass_input">
-            </div>
-
-            <input id="btn" type="button" value="Entrar">
-            <p><a href="register.html">Não tem uma conta? Cadastre-se</a></p>
-        </form>
-    </section>
+    
 </body>
 </html>
