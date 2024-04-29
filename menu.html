@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="logo.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <title>Menu - DUPELA SNACKS</title>
 </head>
@@ -14,101 +15,160 @@
         </div>
         <nav class="nav-top">
             <ul class="menu">
-                <li class="list-menu"><a href="index.html">HOME</a></li>
+                <li class="list-menu"><a href="index.html">INICIO</a></li>
                 <li class="list-menu"><a href="menu.html">MENU</a></li>
-                <li class="list-menu"><a href="about.html">ABOUT</a></li>
+                <li class="list-menu"><a href="about.html">SOBRE</a></li>
                 <li class="list-menu"><a href="professor.html">PROFESSOR</a></li>            </ul>
         </nav>
     </header>
-
+    <section id="section-text-menu">
+        <span id="title-text-menu">Recomendações da casa</span>
+        <div id="container-text-menu">
+            <ul>
+                <li>
+                    <span class="title-recomendacao-list">
+                        X-Bacon:
+                    </span>
+                    <p>
+                        O clássico reinventado. O X-Bacon é uma explosão de sabor, com um suculento hambúrguer grelhado coberto por fatias generosas de bacon crocante e queijo derretido. Acompanhado de alface fresca, tomate e uma camada generosa de maionese, este é o hambúrguer que conquista corações e paladares.
+                    </p>
+                </li>
+                <li>
+                    <span class="title-recomendacao-list">
+                        X-Triplo Burguer:
+                    </span>
+                    <p>
+                        Para os amantes de hambúrgueres, o X-Triplo Burguer é a escolha definitiva. Três deliciosos hambúrgueres angus grelhados, empilhados um sobre o outro e intercalados com queijo cheddar derretido, fatias suculentas de bacon, alface crocante, tomate fresco e cebola caramelizada. Cada mordida é uma experiência de sabor intensa e satisfatória que vai deixar você querendo mais.
+                    </p>
+                </li>
+                <li>
+                    <span class="title-recomendacao-list">
+                        X-Salada:
+                    </span>
+                    <p>
+                        Para aqueles que buscam uma opção mais leve e refrescante, o X-Salada é a escolha perfeita. Um hambúrguer suculento, coberto com queijo derretido e acompanhado de alface crocante, tomate fresco, cebola roxa e picles, tudo envolto em um delicioso pão de brioche. Este hambúrguer é uma explosão de frescor e sabor que vai deixar você com água na boca.
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section id="cardapio-section">
+        <div>
+            <h1 id="title-cardapio">Cardapio</h1>
+            <ul id="list-prod">
+                <li class="prods">
+                    <span>Lanches</span>
+                    <ul>
+                        <li>X - Bacon</li>
+                        <li>X - Triplo Burguer</li>
+                        <li>X - Egg</li>
+                        <li>X - Salada</li>
+                        <li>X - Toscana</li>
+                        <li>X - Frango</li>
+                        <li>X - Picanha</li>
+                    </ul>
+                </li>
+                <li class="prods">
+                    <span>Porções</span>
+                    <ul>
+                        <li>Batata Frita - 500g</li>
+                        <li>Batata com bacon - 250g</li>
+                        <li>Batata com bacon e cheddar - 250g</li>
+                    </ul>
+                </li>
+                <li class="prods">
+                    <span>Bebidas</span>
+                    <ul>
+                        <li>Coca cola 2L</li>
+                        <li>Guarana 2L</li>
+                        <li>Pepsi 2L</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <img width="400px" src="lanche_principal.jpeg" alt="">
+    </section>
     <section id="menu-section">
         <div class="content-menu-section">
             <div class="card-box-prod">
-                <span class="title-card">Hamburger</span>
+                <span class="title-card">X - Bacon</span>
                 <img class="lanche_img" src="\assets\x_bacon.jpeg" alt="lanche_pic"> 
-                <p class="text-card">Preço: 30,00$</p>
-                <button type="button" class="button"> COMPRAR</button>
+                <p class="text-card">Preço: 35,00$</p>
+                <button type="button" class="button" onclick="mensagem()"> COMPRAR</button>
             </div>
             <div class="card-box-prod">
-                <span class="title-card">Hamburger</span>
+                <span class="title-card">X - Salada</span>
                 <img class="lanche_img" src="\assets\x_salada.jpeg" alt="lanche_pic"> 
-                <p class="text-card">Preço: 30,00$</p>
-                <button type="button" class="button"> COMPRAR</button>
+                <p class="text-card">Preço: 25,00$</p>
+                <button type="button" class="button" onclick="mensagem()"> COMPRAR</button>
             </div>
             <div class="card-box-prod">
-                <span class="title-card">Hamburger</span>
+                <span class="title-card">X - Frango</span>
                 <img class="lanche_img" src="\assets\x_frango.jpeg" alt="lanche_pic"> 
-                <p class="text-card">Preço: 30,00$</p>
-                <button type="button" class="button"> COMPRAR</button>
+                <p class="text-card">Preço: 40,00$</p>
+                <button type="button" class="button" onclick="mensagem()"> COMPRAR</button>
             </div>
             <div class="card-box-prod">
-                <span class="title-card">Hamburger</span>
+                <span class="title-card">X - Toscana</span>
                 <img class="lanche_img" src="\assets\x_toscana.jpeg" alt="lanche_pic"> 
-                <p class="text-card">Preço: 30,00$</p>
-                <button type="button" class="button"> COMPRAR</button>
+                <p class="text-card">Preço: 40,00$</p>
+                <button type="button" class="button" onclick="mensagem()"> COMPRAR</button>
             </div>
            
             <div class="card-box-prod">
-                <span class="title-card">Hamburger</span>
+                <span class="title-card">X - Triplo Burguer</span>
                 <img class="lanche_img" src="\assets\triplo.jpeg" alt="lanche_pic"> 
-                <p class="text-card">Preço: 30,00$</p>
-                <button type="button" class="button"> COMPRAR</button>
+                <p class="text-card">Preço: 42,00$</p>
+                <button type="button" class="button" onclick="mensagem()"> COMPRAR</button>
             </div>
            
             <div class="card-box-prod">
-                <span class="title-card">Hamburger</span>
+                <span class="title-card" >X - Egg</span>
                 <img class="lanche_img" src="\assets\x_egg.jpeg" alt="lanche_pic"> 
-                <p class="text-card">Preço: 30,00$</p>
-                <button type="button" class="button"> COMPRAR</button>
+                <p class="text-card">Preço: 27,00$</p>
+                <button type="button" class="button" onclick="mensagem()"> COMPRAR</button>
             </div>
 
             <div class="card-box-prod">
-                <span class="title-card">Hamburger</span>
+                <span class="title-card">X - Picanha</span>
                 <img class="lanche_img" src="\assets\x_picanha.jpeg" alt="lanche_pic"> 
-                <p class="text-card">Preço: 30,00$</p>
-                <button type="button" class="button"> COMPRAR</button>
+                <p class="text-card">Preço: 36,00$</p>
+                <button type="button" class="button" onclick="mensagem()"> COMPRAR</button>
             </div>
 
             <div class="card-box-prod">
-                <span class="title-card">Hamburger</span>
+                <span class="title-card">Batata Frita</span>
                 <img class="lanche_img" src="\assets\batata_normal.jpeg" alt="lanche_pic"> 
                 <p class="text-card">Preço: 30,00$</p>
-                <button type="button" class="button"> COMPRAR</button>
+                <button type="button" class="button" onclick="mensagem()"> COMPRAR</button>
             </div>
 
             <div class="card-box-prod">
-                <span class="title-card">Hamburger</span>
+                <span class="title-card">Batata Frita com bacon</span>
                 <img class="lanche_img" src="\assets\batata_bacon.jpeg" alt="lanche_pic"> 
-                <p class="text-card">Preço: 30,00$</p>
-                <button type="button" class="button"> COMPRAR</button>
+                <p class="text-card">Preço: 34,00$</p>
+                <button type="button" class="button" onclick="mensagem()"> COMPRAR</button>
             </div>
 
             <div class="card-box-prod">
-                <span class="title-card">Hamburger</span>
+                <span class="title-card">Batata Frita - bacon e cheddar</span>
                 <img class="lanche_img" src="\assets\batata_cheddar.jpeg" alt="lanche_pic"> 
-                <p class="text-card">Preço: 30,00$</p>
-                <button type="button" class="button"> COMPRAR</button>
-            </div>
-           
-            <div class="card-box-prod">
-                <span class="title-card">Hamburger</span>
-                <img class="lanche_img" src="\assets\batata_normal.jpeg" alt="lanche_pic"> 
-                <p class="text-card">Preço: 30,00$</p>
-                <button type="button" class="button"> COMPRAR</button>
+                <p class="text-card">Preço: 38,00$</p>
+                <button type="button" class="button" onclick="mensagem()"> COMPRAR</button>
             </div>
 
             <div class="card-box-prod">
-                <span class="title-card">Hamburger</span>
+                <span class="title-card">Fanta laranja - Lata</span>
                 <img class="lanche_img" src="\assets\fanta.png" alt="lanche_pic"> 
-                <p class="text-card">Preço: 30,00$</p>
-                <button type="button" class="button"> COMPRAR</button>
+                <p class="text-card">Preço: 7,00$</p>
+                <button type="button" class="button" onclick="mensagem()"> COMPRAR</button>
             </div>
 
             <div class="card-box-prod">
-                <span class="title-card">Hamburger</span>
+                <span class="title-card">Coca Cola - Lata</span>
                 <img class="lanche_img" src="\assets\cocacola.png" alt="lanche_pic"> 
-                <p class="text-card">Preço: 30,00$</p>
-                <button type="button" class="button"> COMPRAR</button>
+                <p class="text-card">Preço: 7,00$</p>
+                <button type="button" class="button" onclick="mensagem()"> COMPRAR</button>
             </div>
 
            
@@ -125,10 +185,24 @@
             <p>Telefone: (13) 99119-4575</p>
           </div>
           <div class="social-links">
-            <a href="#" class="instagram-icon" target="_blank" rel="noopener noreferrer">Instagram</a>
-            <a href="#" class="linkedin-icon" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://www.instagram.com/adrianoj.06/"  target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href="linkedin.com/in/adriano-júnior-85936a230"  target="_blank" rel="noopener noreferrer">LinkedIn</a>
           </div>
         </div>
       </footer> 
 </body>
+<script>
+    function mensagem(){
+        alert("Em desenvolvimento...")
+    }
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-E20P22SCJC"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-E20P22SCJC');
+</script>
 </html>

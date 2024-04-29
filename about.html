@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="logo.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
-    <title>About Us - DUPELA SNACKS</title>
+    <title>Sobre - DUPELA SNACKS</title>
 </head>
 <body>
     <header>
@@ -14,16 +15,16 @@
         </div>
         <nav class="nav-top">
             <ul class="menu">
-                <li class="list-menu"><a href="index.html">HOME</a></li>
+                <li class="list-menu"><a href="index.html">INICIO</a></li>
                 <li class="list-menu"><a href="menu.html">MENU</a></li>
-                <li class="list-menu"><a href="about.html">ABOUT</a></li>
+                <li class="list-menu"><a href="about.html">SOBRE</a></li>
                 <li class="list-menu"><a href="professor.html">PROFESSOR</a></li>            </ul>
         </nav>
     </header>
 
     <section id="about-section">
         <div class="content-about-section">
-            <h2>About Us</h2>
+            <h2>Sobre</h2>
             <p>Dê as boas-vindas aos sabores que vão conquistar o seu paladar! Na nossa lanchonete, os lanches são as verdadeiras estrelas do show, prontos para te levar a uma viagem gastronômica inesquecível. Cada mordida é uma explosão de sabores cuidadosamente combinados para criar verdadeiras obras de arte culinárias.</p>
             <p>Prepare-se para uma experiência única e deliciosa! Nossos hambúrgueres são a definição de suculência, com carne grelhada no ponto certo e acompanhamentos frescos que elevam o sabor a outro nível. De clássicos cheeseburgers a opções gourmet com ingredientes premium, cada lanche é uma experiência digna de aplausos.</p>
             <p>Mas não para por aí! Nossos sanduíches são uma verdadeira festa para os sentidos. Com uma variedade de pães frescos e recheios irresistíveis, cada sanduíche é uma combinação perfeita de texturas e sabores que vai deixar você querendo mais.</p>
@@ -31,19 +32,66 @@
             <p>Então, prepare-se para uma explosão de sabor e venha nos visitar. Estamos ansiosos para te receber e te proporcionar uma experiência única com os lanches mais saborosos da região. Sua próxima refeição nunca foi tão emocionante!</p>
         </div>
     </section>
+    <section id="section-contact">
+        <div id="container-form-contact">
+            <span id="title-form-contact">Entrar em contato</span>
+            <form action="" method="post">
+               <div class="input_group">
+                    <label for="nome">Nome completo</label>
+                    <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required>
+                </div>
+                
+                <div class="input_group">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Digite seu email" required>
+                </div>
 
-    <footer class="site-footer">
-        <div class="container footer-content">
-            <div class="contact-info">
-                <p>Seu Nome</p>
-                <p>Email: seu@email.com</p>
-                <p>Telefone: (xx) xxxxx-xxxx</p>
-            </div>
-            <div class="social-links">
-                <a href="#" class="instagram-icon" target="_blank" rel="noopener noreferrer">Instagram</a>
-                <a href="#" class="linkedin-icon" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-            </div>
+                <div class="input_group">
+                    <label for="tel">Numero de contato</label>
+                    <input type="tel" name="tel" id="tel" placeholder="Celular" required>
+                </div>
+
+                <div class="input_group">
+                    <textarea name="texto" id="texto" cols="30" rows="10" ></textarea>
+                </div>
+                <input type="submit" id="btn-form" value="Enviar" onclick="mensagem()">
+            </form>
         </div>
-    </footer>
+        
+    </section>
+    <footer class="site-footer">
+        <h2 id="title-footer">DUPELA SNACKS</h2>
+        <div class="container footer-content">
+          <div class="contact-info">
+            <p>Adriano Júnior</p>
+            <p>Email: adrianobinan@gmail.com</p>
+            <p>Telefone: (13) 99119-4575</p>
+          </div>
+          <div class="social-links">
+            <a href="https://www.instagram.com/adrianoj.06/"  target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href="linkedin.com/in/adriano-júnior-85936a230"  target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          </div>
+        </div>
+      </footer> 
 </body>
+<script>
+    function mensagem(){
+        let name = document.getElementById('nome');
+        let email = document.getElementById('email');
+        let tel = document.getElementById('tel');
+        if(name.value == "" || email.value == "" || tel.value == "" ){
+            return alert("Preencha as informações.")
+        }
+        alert("Enviado.")
+    }
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-E20P22SCJC"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-E20P22SCJC');
+</script>
 </html>

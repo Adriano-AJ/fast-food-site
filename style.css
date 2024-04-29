@@ -48,6 +48,7 @@ section{
     display: flex;
     align-items: center;
     justify-content: center;
+    min-width: 600px;
 }
 .text-principal{
     display: flex;
@@ -95,23 +96,18 @@ section{
     border-radius: 10px;
     background-color: aqua;
 }
-.title-card{
-  
-
-
-}
 .content-menu-section{
     display: flex;
     justify-content: center;
     gap: 15px;
     padding: 20px;
-    
     max-width: 1200px;
 }
 #menu-section{
     display: flex;
     justify-content: center;
     flex-direction: column;
+    padding: 20px;
 }
 #title-footer{
     padding: 10px;
@@ -174,11 +170,16 @@ section{
   }
   
   .card-box-prod {
+    background-color: #ffffff;
     margin: 15px;
     max-width: 275px;
     text-align: center;
     border: none;
+    transition: 1s;
     box-shadow: 3px 3px 5px 0px rgba(139, 139, 139, 0.5);
+  }
+  .card-box-prod:hover{
+    transform: scale(1.05);
   }
   .card-box-prod p {
     display: flex;
@@ -229,70 +230,64 @@ section{
   .content-about-section p:last-child {
     margin-bottom: 0;
   }
-  
-  /* Estilizando o header e a navegação */
-  
-  
-  /* Adicione mais estilos conforme necessário */
-  
-  /* Mídia para dispositivos com largura até 600 pixels (por exemplo, dispositivos móveis) */
-  @media screen and (max-width: 600px) {
-    
+
+  #section-contact{
+    padding: 10px;
+    width: 100%;
   }
-  #main_login{
-   display: grid; /* Dos filas, 100px y 200px de alto respectivamente */
-    grid-template-columns: 1fr 1fr; 
-  }
-  #picture_login{
-    width: 50vw;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-     background-image: url('logo.jpeg'); 
-     background-color: #002039;
-  }
-  #login_section, form{
-    height: 100vh;
+  #container-form-contact{
+    min-width: 400px;
+    width: 800px;
+    max-width: 1280px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
-    background-color: #1a1a1e;
-  }
-  form{
-    padding-left: 80px;
-    padding-right: 80px;
-    gap: 25px;
     justify-content: center;
+    align-items: center;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: #c4c4cc;
+    background-color: #fff;
+    gap: 20px;
+  }form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 4px;
+    padding: 10px;
     width: 100%;
   }
-  form .logo{
-    margin-bottom: 40px;
-    width: 100%;
+  #title-form-contact{
+    font-size: 24px;
+    font-weight: 600;
   }
-  #btn{
+  #btn-form{
     text-align: center;
     padding: 10px;
     border-radius: 5px;
     border: none;
     cursor: pointer;
-    background-color: #0f5183;
+    background-color: #0f8332;
     color: #ffffff;
     font-weight: 600;
     font-size: 18px;
+    width: 100%;
   }
   .input_group{
     display: flex;
     flex-direction: column;
     gap: 10px;
-
+    width: 100%;
   }
   .input_group label{
-    color: #fff;
+   
   }
   .input_group input{
     border-radius: 5px;
     border-style: solid;
     padding: 10px;
-    background-color: #242425;
     font-size: 16px;
     color: #FFFFFF;
   }
@@ -345,4 +340,42 @@ section{
     border-style: solid;
     border-color: #ffffff;
     border-width: 2px;
+  } 
+  #section-text-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ddd;
+    padding: 20px;
+  }#container-text-menu{
+    padding: 20px;
+    border-radius: 5px;
+    border-width: 2px;
+    border-color: #bb552f;
+    background-color: #ffffff;
+    border-style: solid;
+  }#title-text-menu{
+    font-size: 24px;
+    background-color: #8a5a49;
+    width: 100%;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-weight: 600;
+    border-radius: 10px;
+    padding: 5px;
+    color: #fff;
+  }
+  #container-text-menu ul{
+   list-style: none;
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+   border: #933e20;
+   border-style: solid;
+   padding: 10px;
+   border-radius: 5px;
+  }
+  #container-text-menu ul span{
+    font-weight: 500;
   }
